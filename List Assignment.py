@@ -65,10 +65,9 @@ print("How many a's?:", how_many_a)
 # Exercise_9: Use list comprehension to create a new list containing the squares of all even numbers from 0 to 10. Print the resulting list.
 
 # Solution_9
-def squares(start,end):
-     squares = [value * 2 for value in range(start,end+1)]
-     return squares
-print(squares(0,5))
+list_4 = [0,1,2,3,4,5,6,7,8,9,10]
+squares = [x**2 for x in range(11) if x % 2 == 0]
+print(squares)
 
 # Exercise_10: Given the list nums = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7], write a program to remove duplicates and print the unique elements only.
 
